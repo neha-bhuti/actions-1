@@ -9,13 +9,17 @@ jobs:
         - name: Checkout
           uses: actions/checkout@v6.0.2
 
-        - name: Welcome message
-          run: echo "My First Job"
+        - name: list read
+          run: |
+            echo "My First Job"
+            ls -ltra
+            cat README.md
+        - name: ASCII
+          run: cowsay -f dragon " Run, I'm Dragon....ARGH" >> dragon.txt
+        # - name: List
+        #   run: ls
 
-        - name: List
-          run: ls
+        # - name: Read
+        #   run: cat README.md
 
-        - name: Read
-          run: cat README.md
-          
          
