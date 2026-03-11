@@ -1,0 +1,17 @@
+name: My-First-Workflow
+
+on: push
+
+jobs:
+    first-job:
+        runs-on: ubuntu-latest
+        steps:
+        - name: Welcome message
+          run: echo "My First Job"
+
+        - name: List
+          run: ls
+
+        - name: Read
+          run: cat README,md
+         
